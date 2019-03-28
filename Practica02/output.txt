@@ -1,0 +1,195 @@
+Trama: 05 ca cf db 48 48 69 21
+Codigo de linea: Diferencial
+Manchester
+Medio:WF
+Control de flujo:P&E
+Control de error:Bit de paridad impar
+Trama correcta :)
+Enrutamineto: Estatico
+Origen:
+Grupo 2CM6 : 15
+Destino:
+Grupo 2CM6 : 27
+Idioma: ENG
+Tamaño: 3 byte(s)
+No Fragmentado
+--------------------------------------------------
+Trama: 05 cb cf db 48 48 69 21
+Codigo de linea: Diferencial
+Manchester
+Medio:WF
+Control de flujo:P&E
+Control de error:Bit de paridad par
+Trama correcta :)
+Enrutamineto: Estatico
+Origen:
+Grupo 2CM6 : 15
+Destino:
+Grupo 2CM6 : 27
+Idioma: ENG
+Tamaño: 3 byte(s)
+No Fragmentado
+--------------------------------------------------
+Trama: 05 c6 cf db 48 48 69 21
+Codigo de linea: Diferencial
+Manchester
+Medio:WF
+Control de flujo:P&E
+Control de error:CheckSum
+Resultante 4a1878
+Comprobacion 0
+Enrutamineto: Estatico
+Origen:
+Grupo 2CM6 : 15
+Destino:
+Grupo 2CM6 : 27
+Idioma: ENG
+Tamaño: 3 byte(s)
+No Fragmentado
+--------------------------------------------------
+Trama: 05 c2 cf db 98 42 6f 6e 6a 6f 75 72 00
+Codigo de linea: Diferencial
+Manchester
+Medio:WF
+Control de flujo:P&E
+Control de error:CRC_8
+El CRC es  : 11
+Enrutamineto: Estatico
+Origen:
+Grupo 2CM6 : 15
+Destino:
+Grupo 2CM6 : 27
+Idioma: FRA
+Tamaño: 9 byte(s)
+No Fragmentado
+--------------------------------------------------
+Trama: 05 c2 cf db 98 42 6f 6e 6a 6f 75 72 11
+Codigo de linea: Diferencial
+Manchester
+Medio:WF
+Control de flujo:P&E
+Control de error:CRC_8
+El CRC es  : 0
+Enrutamineto: Estatico
+Origen:
+Grupo 2CM6 : 15
+Destino:
+Grupo 2CM6 : 27
+Idioma: FRA
+Tamaño: 9 byte(s)
+No Fragmentado
+--------------------------------------------------
+Trama: 05 c2 cf db 98 42 6f 6e 6a 6f 75 72 00 00 00
+Codigo de linea: Diferencial
+Manchester
+Medio:WF
+Control de flujo:P&E
+Control de error:CRC_8
+El CRC es  : c9
+Enrutamineto: Estatico
+Origen:
+Grupo 2CM6 : 15
+Destino:
+Grupo 2CM6 : 27
+Idioma: FRA
+Tamaño: 9 byte(s)
+No Fragmentado
+--------------------------------------------------
+Trama: 05 c2 cf db 98 42 6f 6e 6a 6f 75 72 00 00 c9
+Codigo de linea: Diferencial
+Manchester
+Medio:WF
+Control de flujo:P&E
+Control de error:CRC_8
+El CRC es  : 0
+Enrutamineto: Estatico
+Origen:
+Grupo 2CM6 : 15
+Destino:
+Grupo 2CM6 : 27
+Idioma: FRA
+Tamaño: 9 byte(s)
+No Fragmentado
+--------------------------------------------------
+Trama: 05 ce cf db 98 42 6f 6e 6a 6f 75 72 20 20 00 00 00 00
+Codigo de linea: Diferencial
+Manchester
+Medio:WF
+Control de flujo:P&E
+Control de error:CRC_32
+El CRC es  : 02358062
+Enrutamineto: Estatico
+Origen:
+Grupo 2CM6 : 15
+Destino:
+Grupo 2CM6 : 27
+Idioma: FRA
+Tamaño: 9 byte(s)
+No Fragmentado
+--------------------------------------------------
+Trama: 05 ce cf db 98 42 6f 6e 6a 6f 75 72 20 20 02 35 80 62
+Codigo de linea: Diferencial
+Manchester
+Medio:WF
+Control de flujo:P&E
+Control de error:CRC_32
+El CRC es  : 62b7c238
+Enrutamineto: Estatico
+Origen:
+Grupo 2CM6 : 15
+Destino:
+Grupo 2CM6 : 27
+Idioma: FRA
+Tamaño: 9 byte(s)
+No Fragmentado
+--------------------------------------------------
+Trama: 05 c6 cf db 98 42 6f 6e 6a 6f 75 72 20 20 02 35 80 62
+Codigo de linea: Diferencial
+Manchester
+Medio:WF
+Control de flujo:P&E
+Control de error:CheckSum
+Resultante 64c5c678
+Comprobacion 0
+Enrutamineto: Estatico
+Origen:
+Grupo 2CM6 : 15
+Destino:
+Grupo 2CM6 : 27
+Idioma: FRA
+Tamaño: 9 byte(s)
+No Fragmentado
+--------------------------------------------------
+Trama: 05 ce cf db f0 4d 69 20 74 72 61 6d 61 20 71 75 65 64 6f 20 3d 29 34 f9 ef 02 00 00 00 00
+Codigo de linea: Diferencial
+Manchester
+Medio:WF
+Control de flujo:P&E
+Control de error:CRC_32
+El CRC es  : fca64fb6
+Enrutamineto: Estatico
+Origen:
+Grupo 2CM6 : 15
+Destino:
+Grupo 2CM6 : 27
+Idioma: ESP
+Tamaño: 18 byte(s)
+No Fragmentado
+--------------------------------------------------
+Trama: 05 c6 cf db f0 4d 69 20 74 72 61 6d 61 20 71 75 65 64 6f 20 3d 29 34 f9 ef 02 00 00 00 00
+Codigo de linea: Diferencial
+Manchester
+Medio:WF
+Control de flujo:P&E
+Control de error:CheckSum
+Resultante 1aa68be0
+Comprobacion 0
+Enrutamineto: Estatico
+Origen:
+Grupo 2CM6 : 15
+Destino:
+Grupo 2CM6 : 27
+Idioma: ESP
+Tamaño: 18 byte(s)
+No Fragmentado
+--------------------------------------------------
