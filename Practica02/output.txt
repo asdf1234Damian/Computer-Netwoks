@@ -160,14 +160,14 @@ Idioma: FRA
 Tamaño: 9 byte(s)
 No Fragmentado
 --------------------------------------------------
-Trama: 05 ce cf db f0 4d 69 20 74 72 61 6d 61 20 71 75 65 64 6f 20 3d 29 34 f9 ef 02 00 00 00 00
+Trama: 05 cc cf db f0 4d 69 20 74 72 61 6d 61 20 71 75 65 64 6f 20 3d 29 34 f9 ef 02 00 00 00 00
 Codigo de linea: Diferencial
 Manchester
 Medio:WF
 Control de flujo:P&E
 Control de error:CRC_32
-El CRC es  : fca64fb6
-Enrutamineto: Estatico
+El CRC es  : 88ab063a
+Enrutamineto: Dinamico
 Origen:
 Grupo 2CM6 : 15
 Destino:
@@ -176,7 +176,7 @@ Idioma: ESP
 Tamaño: 18 byte(s)
 No Fragmentado
 --------------------------------------------------
-Trama: 05 c6 cf db f0 4d 69 20 74 72 61 6d 61 20 71 75 65 64 6f 20 3d 29 34 f9 ef 02 00 00 00 00
+Trama: 05 c6 cf db f0 4d 69 20 74 72 61 6d 61 20 71 75 65 64 6f 20 3d 29 34 f9 ef 02 00 00
 Codigo de linea: Diferencial
 Manchester
 Medio:WF
