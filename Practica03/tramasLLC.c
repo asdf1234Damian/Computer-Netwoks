@@ -299,7 +299,7 @@ void analizaTrama(unsigned char* t){
 
 int main (int argc, char const *argv[]){
 	for (size_t i = 0; i < sizeof(T)/sizeof(T[0]); i++){
-		printf("Trama: %ld\n",i);
+		printf("Trama: %ld\n",i+1);
 		analizaTrama(T[i]);
 	}
 }

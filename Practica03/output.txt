@@ -1,4 +1,4 @@
-Trama: 0
+Trama: 1
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
@@ -7,7 +7,7 @@ Tamaño: 3
 SAP O f0
 T-U; M =SABME 
 
-Trama: 1
+Trama: 2
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:df:1b
 00:02:b3:9c:ae:ba
@@ -16,7 +16,7 @@ Tamaño: 3
 SAP O f1
 T-U; M =UA 
 
-Trama: 2
+Trama: 3
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
@@ -25,7 +25,7 @@ Tamaño: 4
 SAP O f0
 T-S,ss = RR, N(r) = 0
 
-Trama: 3
+Trama: 4
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:df:1b
 00:02:b3:9c:ae:ba
@@ -34,7 +34,7 @@ Tamaño: 4
 SAP O f1
 T-S,ss = RR, N(r) = 0
 
-Trama: 4
+Trama: 5
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
@@ -43,7 +43,7 @@ Tamaño: 18
 SAP O f0
 T-I,N(s) = 0, N(r) =0
 
-Trama: 5
+Trama: 6
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:df:1b
 00:02:b3:9c:ae:ba
@@ -52,19 +52,10 @@ Tamaño: 18
 SAP O f0
 T-I,N(s) = 0, N(r) =1
 
-Trama: 6
-♥ ♥ Cabecera Ethernet ♥ ♥
-00:02:b3:9c:df:1b
-00:02:b3:9c:ae:ba
-Tamaño: 4
-♥ ♥ Protocolo LLC ♥ ♥
-SAP O f1
-T-S,ss = RR, N(r) = 1
-
 Trama: 7
 ♥ ♥ Cabecera Ethernet ♥ ♥
-00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
 Tamaño: 4
 ♥ ♥ Protocolo LLC ♥ ♥
 SAP O f1
@@ -74,12 +65,21 @@ Trama: 8
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 1
+
+Trama: 9
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
 Tamaño: 172
 ♥ ♥ Protocolo LLC ♥ ♥
 SAP O f0
 T-I,N(s) = 1, N(r) =1
 
-Trama: 9
+Trama: 10
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:df:1b
 00:02:b3:9c:ae:ba
@@ -88,7 +88,7 @@ Tamaño: 4
 SAP O f1
 T-S,ss = RR, N(r) = 2
 
-Trama: 10
+Trama: 11
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:df:1b
 00:02:b3:9c:ae:ba
@@ -97,7 +97,7 @@ Tamaño: 95
 SAP O f0
 T-I,N(s) = 1, N(r) =2
 
-Trama: 11
+Trama: 12
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
@@ -106,7 +106,7 @@ Tamaño: 4
 SAP O f1
 T-S,ss = RR, N(r) = 2
 
-Trama: 12
+Trama: 13
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
@@ -115,7 +115,7 @@ Tamaño: 145
 SAP O f0
 T-I,N(s) = 2, N(r) =2
 
-Trama: 13
+Trama: 14
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:df:1b
 00:02:b3:9c:ae:ba
@@ -124,7 +124,7 @@ Tamaño: 4
 SAP O f1
 T-S,ss = RR, N(r) = 3
 
-Trama: 14
+Trama: 15
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:df:1b
 00:02:b3:9c:ae:ba
@@ -133,7 +133,7 @@ Tamaño: 70
 SAP O f0
 T-I,N(s) = 2, N(r) =3
 
-Trama: 15
+Trama: 16
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
@@ -142,7 +142,7 @@ Tamaño: 4
 SAP O f1
 T-S,ss = RR, N(r) = 3
 
-Trama: 16
+Trama: 17
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
@@ -151,19 +151,10 @@ Tamaño: 126
 SAP O f0
 T-I,N(s) = 3, N(r) =3
 
-Trama: 17
-♥ ♥ Cabecera Ethernet ♥ ♥
-00:02:b3:9c:df:1b
-00:02:b3:9c:ae:ba
-Tamaño: 4
-♥ ♥ Protocolo LLC ♥ ♥
-SAP O f1
-T-S,ss = RR, N(r) = 4
-
 Trama: 18
 ♥ ♥ Cabecera Ethernet ♥ ♥
-00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
 Tamaño: 4
 ♥ ♥ Protocolo LLC ♥ ♥
 SAP O f1
@@ -173,24 +164,24 @@ Trama: 19
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 4
+
+Trama: 20
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
 Tamaño: 126
 ♥ ♥ Protocolo LLC ♥ ♥
 SAP O f0
 T-I,N(s) = 4, N(r) =4
 
-Trama: 20
-♥ ♥ Cabecera Ethernet ♥ ♥
-00:02:b3:9c:df:1b
-00:02:b3:9c:ae:ba
-Tamaño: 4
-♥ ♥ Protocolo LLC ♥ ♥
-SAP O f1
-T-S,ss = RR, N(r) = 5
-
 Trama: 21
 ♥ ♥ Cabecera Ethernet ♥ ♥
-00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
 Tamaño: 4
 ♥ ♥ Protocolo LLC ♥ ♥
 SAP O f1
@@ -200,12 +191,21 @@ Trama: 22
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 5
+
+Trama: 23
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
 Tamaño: 18
 ♥ ♥ Protocolo LLC ♥ ♥
 SAP O f0
 T-I,N(s) = 5, N(r) =5
 
-Trama: 23
+Trama: 24
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:df:1b
 00:02:b3:9c:ae:ba
@@ -214,7 +214,7 @@ Tamaño: 4
 SAP O f1
 T-S,ss = RR, N(r) = 6
 
-Trama: 24
+Trama: 25
 ♥ ♥ Cabecera Ethernet ♥ ♥
 03:00:00:00:00:01
 00:04:ac:44:4d:02
@@ -223,7 +223,7 @@ Tamaño: 139
 SAP O f0
 T-U; M =
 
-Trama: 25
+Trama: 26
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
@@ -232,7 +232,7 @@ Tamaño: 53
 SAP O f0
 T-I,N(s) = 6, N(r) =5
 
-Trama: 26
+Trama: 27
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:df:1b
 00:02:b3:9c:ae:ba
@@ -241,7 +241,7 @@ Tamaño: 53
 SAP O f0
 T-I,N(s) = 5, N(r) =7
 
-Trama: 27
+Trama: 28
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
@@ -250,7 +250,7 @@ Tamaño: 18
 SAP O f0
 T-I,N(s) = 7, N(r) =6
 
-Trama: 28
+Trama: 29
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:df:1b
 00:02:b3:9c:ae:ba
@@ -259,7 +259,7 @@ Tamaño: 4
 SAP O f1
 T-S,ss = RR, N(r) = 8
 
-Trama: 29
+Trama: 30
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
@@ -268,7 +268,7 @@ Tamaño: 18
 SAP O f0
 T-I,N(s) = 8, N(r) =6C
 
-Trama: 30
+Trama: 31
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:df:1b
 00:02:b3:9c:ae:ba
@@ -277,7 +277,7 @@ Tamaño: 4
 SAP O f1
 T-S,ss = RR, N(r) = 9
 
-Trama: 31
+Trama: 32
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:ae:ba
 00:02:b3:9c:df:1b
@@ -286,7 +286,898 @@ Tamaño: 3
 SAP O f0
 T-U; M =DISC 
 
+Trama: 33
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-U; M =UA 
+
+Trama: 1
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-U; M =SABME 
+
+Trama: 2
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-U; M =UA 
+
+Trama: 3
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-S,ss = RR, N(r) = 0
+
+Trama: 4
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 0
+
+Trama: 5
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 0, N(r) =0
+
+Trama: 6
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 0, N(r) =1
+
+Trama: 7
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 1
+
+Trama: 8
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 1
+
+Trama: 9
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 172
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 1, N(r) =1
+
+Trama: 10
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 2
+
+Trama: 11
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 95
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 1, N(r) =2
+
+Trama: 12
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 2
+
+Trama: 13
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 145
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 2, N(r) =2
+
+Trama: 14
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 3
+
+Trama: 15
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 70
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 2, N(r) =3
+
+Trama: 16
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 3
+
+Trama: 17
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 126
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 3, N(r) =3
+
+Trama: 18
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 4
+
+Trama: 19
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 4
+
+Trama: 20
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 126
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 4, N(r) =4
+
+Trama: 21
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 5
+
+Trama: 22
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 5
+
+Trama: 23
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 5, N(r) =5
+
+Trama: 24
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 6
+
+Trama: 25
+♥ ♥ Cabecera Ethernet ♥ ♥
+03:00:00:00:00:01
+00:04:ac:44:4d:02
+Tamaño: 139
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-U; M =
+
+Trama: 26
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 53
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 6, N(r) =5
+
+Trama: 27
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 53
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 5, N(r) =7
+
+Trama: 28
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 7, N(r) =6
+
+Trama: 29
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 8
+
+Trama: 30
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 8, N(r) =6C
+
+Trama: 31
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 9
+
 Trama: 32
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-U; M =DISC 
+
+Trama: 33
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-U; M =UA 
+
+Trama: 1
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-U; M =SABME 
+
+Trama: 2
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-U; M =UA 
+
+Trama: 3
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-S,ss = RR, N(r) = 0
+
+Trama: 4
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 0
+
+Trama: 5
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 0, N(r) =0
+
+Trama: 6
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 0, N(r) =1
+
+Trama: 7
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 1
+
+Trama: 8
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 1
+
+Trama: 9
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 172
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 1, N(r) =1
+
+Trama: 10
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 2
+
+Trama: 11
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 95
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 1, N(r) =2
+
+Trama: 12
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 2
+
+Trama: 13
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 145
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 2, N(r) =2
+
+Trama: 14
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 3
+
+Trama: 15
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 70
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 2, N(r) =3
+
+Trama: 16
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 3
+
+Trama: 17
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 126
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 3, N(r) =3
+
+Trama: 18
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 4
+
+Trama: 19
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 4
+
+Trama: 20
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 126
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 4, N(r) =4
+
+Trama: 21
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 5
+
+Trama: 22
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 5
+
+Trama: 23
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 5, N(r) =5
+
+Trama: 24
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 6
+
+Trama: 25
+♥ ♥ Cabecera Ethernet ♥ ♥
+03:00:00:00:00:01
+00:04:ac:44:4d:02
+Tamaño: 139
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-U; M =
+
+Trama: 26
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 53
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 6, N(r) =5
+
+Trama: 27
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 53
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 5, N(r) =7
+
+Trama: 28
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 7, N(r) =6
+
+Trama: 29
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 8
+
+Trama: 30
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 8, N(r) =6C
+
+Trama: 31
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 9
+
+Trama: 32
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-U; M =DISC 
+
+Trama: 33
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-U; M =UA 
+
+Trama: 1
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-U; M =SABME 
+
+Trama: 2
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-U; M =UA 
+
+Trama: 3
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-S,ss = RR, N(r) = 0
+
+Trama: 4
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 0
+
+Trama: 5
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 0, N(r) =0
+
+Trama: 6
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 0, N(r) =1
+
+Trama: 7
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 1
+
+Trama: 8
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 1
+
+Trama: 9
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 172
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 1, N(r) =1
+
+Trama: 10
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 2
+
+Trama: 11
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 95
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 1, N(r) =2
+
+Trama: 12
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 2
+
+Trama: 13
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 145
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 2, N(r) =2
+
+Trama: 14
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 3
+
+Trama: 15
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 70
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 2, N(r) =3
+
+Trama: 16
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 3
+
+Trama: 17
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 126
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 3, N(r) =3
+
+Trama: 18
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 4
+
+Trama: 19
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 4
+
+Trama: 20
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 126
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 4, N(r) =4
+
+Trama: 21
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 5
+
+Trama: 22
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 5
+
+Trama: 23
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 5, N(r) =5
+
+Trama: 24
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 6
+
+Trama: 25
+♥ ♥ Cabecera Ethernet ♥ ♥
+03:00:00:00:00:01
+00:04:ac:44:4d:02
+Tamaño: 139
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-U; M =
+
+Trama: 26
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 53
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 6, N(r) =5
+
+Trama: 27
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 53
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 5, N(r) =7
+
+Trama: 28
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 7, N(r) =6
+
+Trama: 29
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 8
+
+Trama: 30
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 18
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-I,N(s) = 8, N(r) =6C
+
+Trama: 31
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f1
+T-S,ss = RR, N(r) = 9
+
+Trama: 32
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP O f0
+T-U; M =DISC 
+
+Trama: 33
 ♥ ♥ Cabecera Ethernet ♥ ♥
 00:02:b3:9c:df:1b
 00:02:b3:9c:ae:ba
