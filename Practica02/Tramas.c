@@ -89,7 +89,7 @@ unsigned int sum = 0;
 
 void analizarTrama(unsigned char * t) {
   unsigned char n = 5+((t[4]>>3)&7)*3;
-  for (size_t i = 5; i < n; i++) {
+  for (unsigned char i = 5; i < n; i++) {
     printf("%c", t[i]);
   }
   printf("\n");
@@ -197,14 +197,10 @@ void analizarTrama(unsigned char * t) {
 int main(int argc, char const *argv[]) {
   for (unsigned char i = 0; i <sizeof(tramas)/sizeof(tramas[0]); i++) {
     unsigned char * trama  = tramas[i];
-    // printf("Size : %d \n",5+((trama[4]>>3)&7)*3);
     printf("Trama %d: ",i);
-    // for (size_t j = 0; j < 5+((trama[4]>>3)&7)*3; j++) {
-    //   printf("%.2x ", trama[j]);
-    // }
     printf("\n");
     analizarTrama(trama);
-    for (size_t i = 0; i < 50; i++) {
+    for (unsigned char i = 0; i < 50; i++) {
       printf("-");
     }
     printf("\n");
