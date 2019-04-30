@@ -1,0 +1,201 @@
+Trama: 1
+♥ ♥ Cabecera Ethernet ♥ ♥
+ff:ff:ff:ff:ff:ff
+00:23:8b:46:e9:ad
+♥ ♥ Protocolo ARP ♥ ♥
+Tipo de dir hardware: Token Ring
+Tipo protocolo de direccion: Tam. dir. Hardware: 6
+Tam. dir. IPv4: 4
+Código de Operación: Request
+MAC Origen: 00:23:8b:46:e9:ad
+IP Origen: 148.204.057.203
+MAC Destino: 00:00:00:00:00:00
+IP Destino: 148.204.057.254
+
+
+Trama: 2
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:23:8b:46:e9:ad
+00:1f:45:9d:1e:a2
+♥ ♥ Protocolo ARP ♥ ♥
+Tipo de dir hardware: Ethernet
+Tipo protocolo de direccion: Tam. dir. Hardware: 6
+Tam. dir. IPv4: 4
+Código de Operación: Reply
+MAC Origen: 00:1f:45:9d:1e:a2
+IP Origen: 148.204.057.254
+MAC Destino: 00:23:8b:46:e9:ad
+IP Destino: 148.204.057.203
+
+
+Trama: 3
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:1f:45:9d:1e:a2
+00:23:8b:46:e9:ad
+Ether type = IP
+♥ ♥ Protocolo IP ♥ ♥
+
+
+Trama: 4
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:b3:9c:ae:ba
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP D f0
+SAP O f0
+T-I,N(s) = 64, N(r) =73
+
+Trama: 5
+♥ ♥ Cabecera Ethernet ♥ ♥
+ff:ff:ff:ff:ff:ff
+00:23:8b:46:e9:ad
+♥ ♥ Protocolo ARP ♥ ♥
+Tipo de dir hardware: ATM
+Tipo protocolo de direccion: Tam. dir. Hardware: 6
+Tam. dir. IPv4: 4
+Código de Operación: Inv.Req
+MAC Origen: 00:23:8b:46:e9:ad
+IP Origen: 148.204.057.203
+MAC Destino: 00:00:00:00:00:00
+IP Destino: 148.204.058.225
+
+
+Trama: 6
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:23:8b:46:e9:ad
+00:1f:45:9d:1e:a2
+♥ ♥ Protocolo ARP ♥ ♥
+Tipo de dir hardware: ATM
+Tipo protocolo de direccion: Tam. dir. Hardware: 6
+Tam. dir. IPv4: 4
+Código de Operación: Inv.Rep
+MAC Origen: 00:1f:45:9d:1e:a2
+IP Origen: 148.204.058.225
+MAC Destino: 00:23:8b:46:e9:ad
+IP Destino: 148.204.057.203
+
+
+Trama: 7
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:23:8b:46:e9:ad
+00:1f:45:9d:1e:a2
+Ether type = IP
+♥ ♥ Protocolo IP ♥ ♥
+
+
+Trama: 8
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:1f:45:9d:1e:a2
+00:23:02:03:04:05
+Ether type = IP
+♥ ♥ Protocolo IP ♥ ♥
+
+
+Trama: 9
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:1f:45:9d:1e:a2
+00:23:8b:46:e9:ad
+Ether type = IP
+♥ ♥ Protocolo IP ♥ ♥
+
+
+Trama: 10
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:df:1b
+00:02:02:03:04:05
+Tamaño: 4
+♥ ♥ Protocolo LLC ♥ ♥
+SAP D f0
+SAP O f0
+T-I,N(s) = 6, N(r) =99
+
+Trama: 11
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+11:11:11:11:11:11
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP D f0
+SAP O f0
+T-U; M =
+
+Trama: 12
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:23:8b:46:e9:ad
+00:1f:02:03:04:05
+Ether type = IP
+♥ ♥ Protocolo IP ♥ ♥
+
+
+Trama: 13
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:01:02:03:04:05
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP D f0
+SAP O f1
+T-U; M =UA 
+
+Trama: 14
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:1f:45:9d:1e:a2
+00:1c:c0:7b:35:a1
+Ether type = IP
+♥ ♥ Protocolo IP ♥ ♥
+
+
+Trama: 15
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:23:8b:46:e9:ad
+00:1f:45:9d:1e:a2
+Otros
+
+
+Trama: 16
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+22:22:22:22:22:22
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP D f0
+SAP O f0
+T-U; M =-  
+
+Trama: 17
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP D f0
+SAP O f0
+T-U; M =DISC 
+
+Trama: 18
+♥ ♥ Cabecera Ethernet ♥ ♥
+02:ff:53:c3:e9:ab
+00:ff:66:7f:d4:3c
+Ether type = IP
+♥ ♥ Protocolo IP ♥ ♥
+
+
+Trama: 19
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:02:b3:9c:ae:ba
+00:02:b3:9c:df:1b
+Tamaño: 3
+♥ ♥ Protocolo LLC ♥ ♥
+SAP D f0
+SAP O f1
+T-U; M =RD   
+
+Trama: 20
+♥ ♥ Cabecera Ethernet ♥ ♥
+00:ff:66:7f:d4:3c
+02:ff:53:c3:e9:ab
+Ether type = IP
+♥ ♥ Protocolo IP ♥ ♥
+
+
