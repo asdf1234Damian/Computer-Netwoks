@@ -9,7 +9,7 @@ struct myStruct{
     char cadena[60];
     int  nums[2];
     float x;
-} ;
+};
 
 void *foo(void *arg){
     struct myStruct argument = *((struct myStruct*)arg);
@@ -17,15 +17,15 @@ void *foo(void *arg){
     strcpy((*((struct myStruct*)arg)).cadena,"Hola desde el hijo");
     (*((struct myStruct*)arg)).nums[0] = (*((struct myStruct*)arg)).nums[1];
     (*((struct myStruct*)arg)).x = 3.1416;
-    // return (void *)&argument;
+    //return (void *)&argument;
 }
 
 int main(int argc, char const *argv[]){
+    srand((unsigned) time(NULL));
     if(argc==1){
         printf("Argumentos faltantes");
         return 0;
     }
-    srand((unsigned) time(NULL));
     //Paso 1: Creacion de hilos
     int n = strtol(argv[1], NULL,10);
     printf("Numero de hilos a crear : %d\n", n);
@@ -37,7 +37,7 @@ int main(int argc, char const *argv[]){
         threadIDS[i]=i; 
         structs[i] = {{},{rand(),(int)i},(float)(rand()/3.4)};
         strcpy(structs[i].cadena,"mensaje escrito por el padre");
-        if (pthread_create(&thrad_Arr[i],NULL,foo,(void*)&structs[i])){
+        if (pthread_create(&thrad_Arr[i],NULL,foo,(void*)&structs[0])){
             printf("error creating thread.");
             return 0;
         }   

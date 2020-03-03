@@ -13,15 +13,15 @@ void* prodF(void* arg){
     int n = *((int*)arg);
     char c = footprint[n];
     for (int i = 0; i < 20;){
-        if (1+sem_wait(&sem[0])){
+        if (1+sem_trywait(&sem[0])){
             crt_Z[0] = c;
-            // std::cout<<("\nProduciendo: "+crt_Z[0]);
+            // std::cout<<"\nProduciendo en cz 0";
             i++;
             sem_post(&sem[2]);
         }
-        if(1+sem_wait(&sem[1])){
+        if(1+sem_trywait(&sem[1])){
             crt_Z[1] = c;
-            // std::cout<<"\nProduciendo: "+crt_Z[1];
+            // std::cout<<"\nProduciendo: en cz 1";
             i++;
             sem_post(&sem[3]);
         }

@@ -3,15 +3,17 @@
 #include <pthread.h>
 #include <semaphore.h>
 
-
-sem_t semCrit,semLttr,semSymb,semCons;
+sem_t semCrit,semLttr,semSymb,semConsA,semConsB;
 pthread_t prodNums,prodLttr,prodSymb,consumer;
-char critZ;
+char critZ[2];
+int n;
 
 void* prodNumF(void* arg){
+    sem_getvalue(&semCrit,&n);
+    std::cout<<"Semaforo usado"<<n<<std::endl;
     for (size_t i = 0; i < 10; i++){
         sem_wait(&semCrit);
-        critZ = char(i+int('0'));
+        critZ[0] = char(i+int('0'));
         std::cout<<"Produciendo:"<<critZ<<std::endl;
         sem_post(&semCons);
     }
@@ -24,7 +26,7 @@ void* prodLttrF(void* arg){
     sem_wait(&semLttr);
     for (size_t i = 0; i < 10; i++){
         sem_wait(&semCrit);
-        critZ = char(i+int('A'));
+        critZ[0] = char(i+int('A'));
         std::cout<<"Produciendo:"<<critZ<<std::endl;
         sem_post(&semCons);
     }
@@ -37,7 +39,7 @@ void* prodSymbF(void* arg){
     sem_wait(&semSymb);
     for (size_t i = 0; i < 10; i++){
         sem_wait(&semCrit);
-        critZ = char(i+int('!'));
+        critZ[0] = char(i+int('!'));
         std::cout<<"Produciendo:"<<critZ<<std::endl;
         sem_post(&semCons);
     }
@@ -54,7 +56,7 @@ void* consF(void* arg){
 
 int main(int argc, char const *argv[]){
     //Paso 1: Crear semaforo
-    if (sem_init(&semCrit,0,1) && sem_init(&semCons,0,0)
+    if (sem_init(&semCrit,0,2) && sem_init(&semCons,0,0)
         && sem_init(&semLttr,0,1) && sem_init(&semSymb,0,1)){
         std::cout<<"Valio verga el semaforo\n";
         return 0;
