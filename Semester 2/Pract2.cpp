@@ -7,11 +7,10 @@
 
 
 const int SLEEPCONST = 0;
-sem_t semWriteA[4], semWriteB[4], semRead[8], semWriteFile[10];
+sem_t semWriteA[4], semWriteB[4], semRead[8];
 pthread_t thrd_P[5],thrd_C[5];
 int p_ID[5],c_ID[5];
 char crt_ZA[4],crt_ZB[4];
-FILE * outFiles[10];
 
 
 void* prodF(void* arg){
@@ -19,7 +18,7 @@ void* prodF(void* arg){
     // std::cout<<"Proceso" <<n+1<<"creado";
     int m = 0;
     bool zoneA = true;
-    for (int i = 0; i < 10000;){
+    for (int i = 0; i < 20000;){
         if(zoneA){
             if (sem_trywait(&semWriteA[m])<0){
                 // std::cout<<"\t\t\t\tsem"<<m<<"ocupado     \n";
@@ -43,31 +42,25 @@ void* prodF(void* arg){
                 sem_post(&semRead[m+4]);
             }
         }
-        sleep(SLEEPCONST);
+        // sleep(SLEEPCONST);
     }
 }
 
 void* consF(void* arg){
-    int semIndex, n = *(int*) arg, m = 0;
+    int  n = *(int*) arg, m = 0;
     std::string pth;
     pth +="./out/";pth +=char(n+'0');pth+=".txt";
-    // std::cout<<"\t\t\tpath:"<<pth<<std::endl;
     FILE *Output;
     char c;
-    // Output = fopen(pth.c_str(),"a+");
-    // if(Output==NULL){
-    //     perror(0);
-    // }
-
-    for (int i = 0; i < 10000;){
+    for (int i = 0; i < 20000;){
         if (sem_trywait(&semRead[m])<0){
             // std::cout<<"Sem ocupado cons "<<m<<std::endl;
             m = (m+1)%8;
         }else{
             c = (m<4?crt_ZA[m]:crt_ZB[m%4]);
-            semIndex = c - (m<4?'a':'1'-4);
+            // semIndex = c - (m<4?'a':'1'-4);
             pth = "./out/";pth += c;pth += ".txt";
-            if (sem_wait(&semWriteFile[semIndex])==0){
+            // if (sem_wait(&semWriteFile[semIndex])==0){
                 Output = fopen(pth.c_str(),"a+");
                 if (Output==NULL){perror(0);}
                 fprintf(Output,"%c\n",c); 
@@ -78,10 +71,10 @@ void* consF(void* arg){
                 }else{
                     sem_post(&semWriteB[m%4]);
                 }
-                sem_post(&semWriteFile[semIndex]);
-            }
+                // sem_post(&semWriteFile[semIndex]);
+            // }
         }
-        sleep(SLEEPCONST);
+        // sleep(SLEEPCONST);
     }
 }
 
@@ -92,13 +85,13 @@ int main(int argc, char const *argv[]){
         if (sem_init(&semRead[i],0,0)){std::cout<<"Sem fail";return 0;}
         if (i<4){
             if (sem_init(&semWriteA[i]  ,0,1)){std::cout<<"Sem fail";return 0;}
-            if (sem_init(&semWriteB[i%4],0,1)){std::cout<<"Sem fail";return 0;}
+            if (sem_init(&semWriteB[i],0,1)){std::cout<<"Sem fail";return 0;}
         }
         
     }
-    for (size_t i = 0; i < 10; i++){
-        if (sem_init(&semWriteFile[i],0,1)){std::cout<<"Sem fail";return 0;}
-    }
+    // for (size_t i = 0; i < 10; i++){
+    //     if (sem_init(&semWriteFile[i],0,1)){std::cout<<"Sem fail";return 0;}
+    // }
     
     // std::cout<<"Todos los semaforos han sido creados\n";
     // std::cout<<"Creando proceso \n";
@@ -119,7 +112,7 @@ int main(int argc, char const *argv[]){
             sem_destroy(&semWriteB[i]);
             sem_destroy(&semWriteA[i]);
         }
-        sem_destroy(&semWriteFile[i]);
+        // sem_destroy(&semWriteFile[i]);
     }
     // std::cout<<"Procesos terminado\n";
 }
